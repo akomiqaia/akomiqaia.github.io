@@ -8,7 +8,7 @@ body {
 
 header {
   background-color: transparent;
-  position: absolute;
+  position: inline-block;
   left: 0;
   right: 0;
 }
