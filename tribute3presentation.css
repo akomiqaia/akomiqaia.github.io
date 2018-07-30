@@ -2,7 +2,8 @@ body {
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
   text-align: center;
-  background: rgba(65 , 66, 53, 90%);
+  background: rgba(0, 0, 0, 90%);
+  color: blanchedalmond;
 }
 /* HEADER */
 
@@ -59,7 +60,7 @@ say that the page was created to applie to coders and founders */
 }
 
 #contentWho {
-  background: rgba(0, 0, 0, 70%);
+  /* background: rgba(0, 0, 0, 70%); */
   color: antiquewhite;
   
 }
@@ -79,4 +80,16 @@ say that the page was created to applie to coders and founders */
 img {
   max-width: 30%;
   height: auto;
+}
+
+#where ul {
+  list-style: none;
+}
+#where li a {
+  font-weight: 900;
+  color: blanchedalmond;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 0.5em;
 }
