@@ -78,18 +78,68 @@ say that the page was created to applie to coders and founders */
 
 
 img {
-  max-width: 30%;
+  max-width: 300px;
   height: auto;
+  padding: 10px 10px;
 }
 
-#where ul {
-  list-style: none;
+
+#whereContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color:  rgba(0, 0, 0, 10%);
+  width: 100%;
+  margin: 30px auto;
+  padding: 30px 30px;
 }
-#where li a {
-  font-weight: 900;
-  color: blanchedalmond;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 16px;
-  padding: 0.5em;
+
+#codewars, #github, #freecodecamp, #linkedin {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  box-sizing: border-box;
+  width: 300px;
+  height: auto;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+}
+#details {
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  transform: scaleY(0);
+  transition: transform 0.3s;
+}
+
+#github:hover #details{
+  background-color: rgb(115, 39, 187);
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  transform: scaleY(1);
+}
+#codewars:hover #details{
+  background-color: rgb(141, 38, 38);
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  transform: scaleY(1);
+}
+#freecodecamp:hover #details {
+  background-color: rgb(2, 100, 2);
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  transform: scaleY(1);  
+}
+#linkedin:hover #details{
+  background-color: rgb(0, 0, 194);
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  transform: scaleY(1);
 }
