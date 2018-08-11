@@ -60,9 +60,9 @@ nav li a:hover::before {
 /* who section */
 #who {
   position: relative;
-  height: 600px;
-  background: url(/img/DSC_0233.JPG);
-  size: auto 600px;;
+  background: url(/img/IMG_1914.JPG);
+  height: 50vw;
+  background-size: cover;
   position: top center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -121,6 +121,36 @@ nav li a:hover::before {
   color: white;
   font-size: 35px;
   cursor: pointer;
+}
+
+#b1 {
+  height: 20vw;
+  display:none;
+  background-image: url(/img/IMG_1914.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+#b1 p {
+  background: rgba(0, 0, 0, 0.582);
+}
+
+#b2 {
+  height: 20vw;
+  display:none;
+  background-image: url(/img/IMG_1739.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+#b3 {
+  height: 20vw;
+  display:none;
+  background-image: url(/img/camphoto_1483920592.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
 
@@ -214,14 +244,15 @@ nav li a:hover::before {
   /* who section */
 #who {
   position: relative;
-  height: 300px;
-  background: url(/img/DSC_0233.JPG);
-  size: auto 300px;;
+  background: url(/img/IMG_1914.JPG);
+  height: 100vw;
+  background-size: cover;
   position: top center;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 #first-header { 
+  color: antiquewhite;
   display: block;
   align-content: center;
   font-family: "Ubuntu", sans-serif;
@@ -230,9 +261,69 @@ nav li a:hover::before {
    
 }
 
-#contentWho {
-  color: antiquewhite;
-  
-}
+
 /* end of who section */
+
+/* what section */
+.column {
+  float: left;
+  width: 33%;
+  padding: 20px;
+  text-align: center;
+  font-size: 5vw;
+  cursor: pointer;
+  color: white;
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+.closebtn {
+  font-size: 6vw;
+}
+
+#b1 {
+  height: 70vw;
+  display:none;
+  background-image: url(/img/IMG_1914.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+#b1 p {
+  background: rgba(0, 0, 0, 0.582);
+  font-size: 6vw;
+}
+
+#b2 {
+  height: 70vw;
+  display:none;
+  background-image: url(/img/IMG_1739.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+#b2 p {
+  background: rgba(0, 0, 0, 0.582);
+  font-size: 6vw;
+}
+
+#b3 {
+  height: 70vw;
+  display:none;
+  background-image: url(/img/camphoto_1483920592.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+#b3 p {
+  background: rgba(0, 0, 0, 0.582);
+  font-size: 6vw;
+}
+
+/* end of what section */
 }
