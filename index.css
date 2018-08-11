@@ -11,7 +11,7 @@ body {
   text-align: center;
   color: blanchedalmond;
 }
-/* HEADER */
+/* navigation section */
 
 header {
   margin: 10px;
@@ -67,16 +67,13 @@ nav li a:hover::before {
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
-/* i need an animation.... the screen just will say that it is
-a personal portfolio of somebody or something similar, maybe 
-say that the page was created to applie to coders and founders */
 #first-header { 
   display: block;
-  padding: 50px;  
+  align-content: center;
+  padding-top: 100px; 
   font-family: "Ubuntu", sans-serif;
-  font-size: 110%;
-  text-align: justify;
-  font-size: 36px; 
+  text-align: center;
+  font-size: 3vw; 
    
 }
 
@@ -84,12 +81,49 @@ say that the page was created to applie to coders and founders */
   color: antiquewhite;
   
 }
+/* end of who section */
+
+
+
 /* what section */
 #project-link {
   text-decoration: none;
   font-weight: 700;
   color: wheat;
 }
+
+/* The grid: Three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
 /* where section */
 /* footer */
 
@@ -97,11 +131,6 @@ say that the page was created to applie to coders and founders */
 
 
 
-img {
-  max-width: 300px;
-  height: auto;
-  padding: 10px 10px;
-}
 
 
 #whereContainer {
@@ -113,6 +142,11 @@ img {
   width: 100%;
   margin: 30px auto;
   padding: 30px 30px;
+}
+
+#linkToProfile {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 36px;
 }
 
 #codewars, #github, #freecodecamp, #linkedin {
@@ -146,14 +180,22 @@ img {
   transform: scaleY(1);
 }
 #codewars:hover #details{
+  background-image: url(https://www.codewars.com/users/akomiqaia/badges/large);
   background-color: rgb(141, 38, 38);
-  transition-property: background-color;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition-property: background-image, background-color;
   transition-duration: 0.3s;
   transform: scaleY(1);
 }
 #freecodecamp:hover #details {
-  background-color: rgb(2, 100, 2);
-  transition-property: background-color;
+  background-image: url(/img/freeCodeCamp.png);
+  background-color: green;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition-property: background-image, background-color;
   transition-duration: 0.3s;
   transform: scaleY(1);  
 }
@@ -166,6 +208,31 @@ img {
 
 @media only screen and (max-width: 600px) {
   html {
-    background: red;
+    background: gray;
   }
+
+  /* who section */
+#who {
+  position: relative;
+  height: 300px;
+  background: url(/img/DSC_0233.JPG);
+  size: auto 300px;;
+  position: top center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+#first-header { 
+  display: block;
+  align-content: center;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  font-size: 6vw; 
+   
+}
+
+#contentWho {
+  color: antiquewhite;
+  
+}
+/* end of who section */
 }

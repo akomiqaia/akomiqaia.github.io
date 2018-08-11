@@ -11,6 +11,7 @@
   <title>Tribute Page</title>
 </head>
 <body>
+  <script src="/index.js"></script>
   <header class="navigation">
     <nav>
     <ul>
@@ -22,16 +23,11 @@
   </header>
   <div>
   <section id="who">
-    <!-- i might use this but we will see  -->
-    <!-- <div>
-        <h1 id="first-header">the webpage was created and is dedicated to application for founders and Coders</h1>
-    </div> -->
+    
     <div id="contentWho">
       
       <p id="first-header">
-      Who am I? This can be really interesting question and can be answered 
-      in many ways but simplest and easiest will be tell you that I'm from 
-      Georgia(the country), on documents and on official paperworks my name 
+      I'm from Georgia(the country), on documents and on official paperworks my name 
       appears as Akaki Mikaia, but all the freinds call me Ako. I was born 
       under the sign of Leo 23 years ago. I finished my studies in Georgia
       moved to London to discover even more. 
@@ -39,9 +35,7 @@
     </div>
   </section>
   <section id="what">
-    <div>
-      <p>Little amount of things we have done before</p>
-    </div>
+    
     <div>
       <p>
         maybe add links to some projects i participated and have done: good examples are library project-link
@@ -54,13 +48,42 @@
 
       </p>
     </div>
+
+  <!-- The grid: three columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="background:green;">Box 1</div>
+  <div class="column" onclick="openTab('b2');" style="background:blue;">Box 2</div>
+  <div class="column" onclick="openTab('b3');" style="background:red;">Box 3</div>
+</div>
+
+<!-- The expanding grid (hidden by default) -->
+<div id="b1" class="containerTab" style="display:none;background:green">
+  <!-- If you want the ability to close the container, add a close button -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>Box 1</h2>
+  <p>Lorem ipsum..</p>
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:blue">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>Box 2</h2>
+  <p>Lorem ipsum..</p>
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background:red">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+  <h2>Box 3</h2>
+  <p>Lorem ipsum..</p>
+</div> 
+
+
   </section>
   <section id="where">
     <p>if you wander more about me you can check following links to my progress in different platforms</p>
     <div id="whereContainer">
       <div id="github">
         <div>
-          <a href="https://github.com/akomiqaia/akomiqaia.github.io" target="_blank"><img src="img//GitHub_Logo_White.png"></a>
+          <a href="https://github.com/akomiqaia/akomiqaia.github.io" target="_blank"><p id="linkToProfile">GitHub</p></a>
         </div>
         <div id="details">
           <h2>GITHUB repository for the webpage</h2>
@@ -68,7 +91,7 @@
       </div>
       <div  id="codewars">  
           <div>
-              <a href="https://www.codewars.com/users/akomiqaia" target="_blank"><img src="https://www.codewars.com/users/akomiqaia/badges/micro"></a>
+              <a href="https://www.codewars.com/users/akomiqaia" target="_blank"><p id="linkToProfile">CodeWars</p></a>
           </div>
           <div id="details">
             <h2>CODEWARS</h2>
@@ -76,15 +99,15 @@
       </div>
       <div id="freecodecamp">
         <div id="freecodecampLogo"> 
-          <a href="https://www.freecodecamp.org/akomiqaia" target="_blank"><img src="img/freeCodeCamp.png"></a>
+          <p id="linkToProfile">freeCodeCamp</p></a>
         </div>
         <div id="details">
-          <h2>Freecodecamp PROFILE</h2>
+            <a href="https://www.freecodecamp.org/akomiqaia" target="_blank">
         </div>
       </div>
       <div id="linkedin">
         <div>
-          <a href="https://www.linkedin.com/in/akaki-mikaia-b6b27a139/" target="_blank"><img src="img/Logo-2CRev-128px-TM.png"></a>
+          <a href="https://www.linkedin.com/in/akaki-mikaia-b6b27a139/" target="_blank"><p id="linkToProfile">LinkedIn</p></a>
         </div>
         <div id="details">
           <h2>linkedin PROFILE</h2>
