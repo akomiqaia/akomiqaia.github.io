@@ -265,7 +265,7 @@ nav li a:hover::before {
 /* end of who section */
 
 /* what section */
-.column {
+/* .column {
   float: left;
   width: 33%;
   padding: 20px;
@@ -323,7 +323,7 @@ nav li a:hover::before {
 #b3 p {
   background: rgba(0, 0, 0, 0.582);
   font-size: 6vw;
-}
+} */
 
 /* end of what section */
 }
