@@ -49,6 +49,7 @@ ul li a:hover {
 }
 #first-header { 
   display: block;
+  margin: 0;
   align-content: center;
   padding-top: 100px; 
   font-family: "Ubuntu", sans-serif;
@@ -262,11 +263,12 @@ ul li a:hover {
   height: 100vw;
   background-size: cover;
   position: top center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-repeat: no-repeat;
 }
 #first-header { 
   color: antiquewhite;
+  margin: 0;
   display: block;
   align-content: center;
   font-family: "Ubuntu", sans-serif;
