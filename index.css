@@ -226,7 +226,7 @@ ul li a:hover {
 
 @media only screen and (max-width: 600px) {
   html {
-    background: red;
+    background: #333;
   }
 
   /* navigation section */
@@ -260,6 +260,7 @@ ul li a:hover {
 #who {
   position: relative;
   background: url(/img/IMG_1914.JPG);
+  /* opacity: 0.2; */
   height: 100vw;
   background-size: cover;
   position: top center;
