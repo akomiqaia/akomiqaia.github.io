@@ -13,50 +13,30 @@ body {
 }
 /* navigation section */
 
-header {
-  margin: 10px;
-  position: inline-block;
-  left: 0;
-  right: 0;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  text-align: center;
 }
-nav ul {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
-nav li {
+ul li {
+  display: inline;
+} 
+
+ul li a{
   display: inline-block;
-  margin: 10px;
-  position: relative;
-}
-nav li a {
-  font-weight: 900;
   color: blanchedalmond;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: 24px;
-  padding: 5px;
 }
 
-
-nav li a:hover {
-  color: aliceblue;
+ul li a:hover {
+  background-color: rgb(143, 40, 40);
 }
 
-nav li a::before {
-  content: '';
-  display: block;
-  height: 3px;
-  width: 100%;
-  background-color: beige;
-  position: absolute;
-  top: 20px;
-  width: 0;
-  border-radius: 50%;
-}
-nav li a:hover::before {
-  width: 100%;
-}
 /* who section */
 #who {
   position: relative;
@@ -101,8 +81,11 @@ nav li a:hover::before {
   font-size: 25px;
   cursor: pointer;
   color: white;
+  background: rgb(63, 58, 58);
 }
-
+.column:hover {
+  background-color: rgb(143, 40, 40);
+}
 .containerTab {
   padding: 20px;
   color: white;
@@ -143,7 +126,9 @@ nav li a:hover::before {
   background-repeat: no-repeat;
 
 }
-
+#b2 p {
+  background: rgba(0, 0, 0, 0.582);
+}
 #b3 {
   height: 20vw;
   display:none;
@@ -152,7 +137,9 @@ nav li a:hover::before {
   background-repeat: no-repeat;
 
 }
-
+#b3 p {
+  background: rgba(0, 0, 0, 0.582);
+}
 
 /* where section */
 /* footer */
@@ -241,6 +228,33 @@ nav li a:hover::before {
     background: rgba(0, 0, 0, 90%);
   }
 
+  /* navigation section */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  text-align: center;
+}
+ul li {
+  display: inline;
+} 
+
+ul li a{
+  display: block;
+  color: blanchedalmond;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: rgb(143, 40, 40);
+}
+
+
   /* who section */
 #who {
   position: relative;
@@ -265,7 +279,7 @@ nav li a:hover::before {
 /* end of who section */
 
 /* what section */
-/* .column {
+.column {
   float: left;
   width: 33%;
   padding: 20px;
@@ -323,7 +337,7 @@ nav li a:hover::before {
 #b3 p {
   background: rgba(0, 0, 0, 0.582);
   font-size: 6vw;
-} */
+}
 
 /* end of what section */
 }
