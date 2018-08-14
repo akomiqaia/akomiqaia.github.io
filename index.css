@@ -12,7 +12,7 @@ body {
 /* navigation section */
 .nav-wrapper {
   width: 100%;
-  padding: 6px 0;
+  padding-bottom:6px;
   position: fixed;
   top: 0;
   left: 0;
@@ -37,7 +37,7 @@ ul li a{
   display: inline-block;
   color: rgb(0, 0, 0);
   text-align: center;
-  padding: 6px 8px;
+  padding: 14px 16px;
   text-decoration: none;
   font-size: 13px;
   box-shadow: rgba(0, 0, 0, 0.52);
@@ -93,8 +93,8 @@ ul li a:hover {
   }
 }
 
-@media screen and (min-height: 900px) {
+@media screen and (min-width: 1024px) {
   #home {
-    min-height: 1000px;
+    min-height: 1080px;
   }
 } 
