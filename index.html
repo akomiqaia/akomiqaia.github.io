@@ -7,64 +7,43 @@
   
   <link rel="stylesheet" href="index.css">    
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-   
-  <title>Tribute Page</title>
+   <script src="/index.js"></script>
+  <title>Akaki Mikaia - Personal Web Page</title>
 </head>
 <body>
-  <script src="/index.js"></script>
-  <header class="navigation">
+  
+  <header>
     <nav>
-    <ul>
-      <li><a href="#who">WHO</a></li>
-      <li><a href="#what">WHAT</a></li>
-      <li><a href="#where">WHERE</a></li>
-    </ul>
+      <div class="container">
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#what">WHAT</a></li>
+          <li><a href="#where">WHERE</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
+  
+  
   <div>
-  <section id="who">
-    
-      <p id="first-header">
-      I'm from Georgia(the country), on documents and on official paperworks my name 
-      appears as Akaki Mikaia, but all the freinds call me Ako. I was born 
-      under the sign of Leo 23 years ago. I finished my studies in Georgia
-      moved to London to discover even more. 
-      </p>
+  <section id="home">
+    <div class="home-wraper">
+      <div class="avatar-hero">
+          <img src="/img/avatar.JPG" alt="avatar-hero">
+      </div>
+      <h1>Hi, I'm Akaki Mikaia</h1>
+      <h2>I'm applying for founders and coders</h2>     
+    </div>
+      
   </section>
+
+
   <section id="what">
     
-    
-
-  <!-- The grid: three columns -->
-<div class="row">
-  <div class="column" onclick="openTab('b1');" >Studies</div>
-  <div class="column" onclick="openTab('b2');" >Experinces</div>
-  <div class="column" onclick="openTab('b3');" >Hobbies </div>
-</div>
-
-<!-- The expanding grid (hidden by default) -->
-<div id="b1" class="containerTab">
-  <!-- If you want the ability to close the container, add a close button -->
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-  
-  <p>info or anything i studied and have done before</p>
-</div>
-
-<div id="b2" class="containerTab" >
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-  
-  <p>it's more important to mention that i did project in chkhorostku and i was teaching in armenia
-    for 3 months. than continued with tour guiding ended up with bartending</p>
-</div>
-
-<div id="b3" class="containerTab">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-  
-  <p> i love damn good coffee in the morning, climbing, cat the evie  </p>
-</div> 
-
-
   </section>
+
+
+
   <section id="where">
     <p>if you wander more about me you can check following links to my progress in different platforms</p>
     <div id="whereContainer">

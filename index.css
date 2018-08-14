@@ -2,9 +2,7 @@
   box-sizing: border-box;
 }
 
-html {
-  background: rgba(0, 0, 0, 90%);
-}
+
 body {
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
@@ -18,7 +16,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: transparent;
   text-align: center;
 }
 ul li {
@@ -26,125 +24,54 @@ ul li {
 } 
 
 ul li a{
+  position: relative;
   display: inline-block;
-  color: blanchedalmond;
+  color: rgb(0, 0, 0);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 13px;
+  box-shadow: rgba(0, 0, 0, 0.52);
 }
 
 ul li a:hover {
-  background-color: rgb(143, 40, 40);
+  background-color: rgb(153, 153, 153);
 }
 
 /* who section */
-#who {
+#home {
   position: relative;
-  background: url(/img/IMG_1914.JPG);
-  height: 50vw;
+  background: url(/img/stone\ and\ mountains.JPG);
+  height: 100%;
+  min-height: 650px;
   background-size: cover;
-  position: top center;
+  background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-}
-#first-header { 
-  display: block;
-  margin: 0;
-  align-content: center;
-  padding-top: 100px; 
-  font-family: "Ubuntu", sans-serif;
-  text-align: center;
-  font-size: 3vw; 
-   
-}
-
-#contentWho {
-  color: antiquewhite;
   
 }
+
+.avatar-hero img {
+  width: 120px;
+  margin: 0 auto;
+  border: solid 3px #dfdfdf;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.52);
+}
+
+
 /* end of who section */
 
 
 
 /* what section */
-#project-link {
-  text-decoration: none;
-  font-weight: 700;
-  color: wheat;
-}
 
-/* The grid: Three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 50px;
-  text-align: center;
-  font-size: 25px;
-  cursor: pointer;
-  color: white;
-  background: rgb(63, 58, 58);
-}
-.column:hover {
-  background-color: rgb(143, 40, 40);
-}
-.containerTab {
-  padding: 20px;
-  color: white;
-}
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
-/* Closable button inside the image */
-.closebtn {
-  float: right;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
-}
-
-#b1 {
-  height: 20vw;
-  display:none;
-  background-image: url(/img/IMG_1914.JPG);
-  background-size: cover;
-  background-repeat: no-repeat;
-
-}
-#b1 p {
-  background: rgba(0, 0, 0, 0.582);
-}
-
-#b2 {
-  height: 20vw;
-  display:none;
-  background-image: url(/img/IMG_1739.JPG);
-  background-size: cover;
-  background-repeat: no-repeat;
-
-}
-#b2 p {
-  background: rgba(0, 0, 0, 0.582);
-}
-#b3 {
-  height: 20vw;
-  display:none;
-  background-image: url(/img/camphoto_1483920592.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-
-}
-#b3 p {
-  background: rgba(0, 0, 0, 0.582);
-}
 
 /* where section */
 /* footer */
-
+/* 
 
 
 
@@ -222,125 +149,5 @@ ul li a:hover {
   transition-property: background-color;
   transition-duration: 0.3s;
   transform: scaleY(1);
-}
+} */
 
-@media only screen and (max-width: 600px) {
-  html {
-    background: #333;
-  }
-
-  /* navigation section */
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  text-align: center;
-}
-ul li {
-  display: inline;
-} 
-
-ul li a{
-  display: block;
-  color: blanchedalmond;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-ul li a:hover {
-  background-color: rgb(143, 40, 40);
-}
-
-
-  /* who section */
-#who {
-  position: relative;
-  background: url(/img/IMG_1914.JPG);
-  /* opacity: 0.2; */
-  height: 100vw;
-  background-size: cover;
-  position: top center;
-  background-attachment: scroll;
-  background-repeat: no-repeat;
-}
-#first-header { 
-  color: antiquewhite;
-  margin: 0;
-  display: block;
-  align-content: center;
-  font-family: "Ubuntu", sans-serif;
-  text-align: center;
-  font-size: 6vw; 
-   
-}
-
-
-/* end of who section */
-
-/* what section */
-.column {
-  float: left;
-  width: 33%;
-  padding: 20px;
-  text-align: center;
-  font-size: 5vw;
-  cursor: pointer;
-  color: white;
-}
-
-.containerTab {
-  padding: 20px;
-  color: white;
-}
-
-.closebtn {
-  font-size: 6vw;
-}
-
-#b1 {
-  height: 70vw;
-  display:none;
-  background-image: url(/img/IMG_1914.JPG);
-  background-size: cover;
-  background-repeat: no-repeat;
-
-}
-#b1 p {
-  background: rgba(0, 0, 0, 0.582);
-  font-size: 6vw;
-}
-
-#b2 {
-  height: 70vw;
-  display:none;
-  background-image: url(/img/IMG_1739.JPG);
-  background-size: cover;
-  background-repeat: no-repeat;
-
-}
-
-#b2 p {
-  background: rgba(0, 0, 0, 0.582);
-  font-size: 6vw;
-}
-
-#b3 {
-  height: 70vw;
-  display:none;
-  background-image: url(/img/camphoto_1483920592.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-
-}
-
-#b3 p {
-  background: rgba(0, 0, 0, 0.582);
-  font-size: 6vw;
-}
-
-/* end of what section */
-}
