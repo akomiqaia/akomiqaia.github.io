@@ -41,13 +41,16 @@ ul li a{
   text-decoration: none;
   font-size: 13px;
   box-shadow: rgba(0, 0, 0, 0.52);
+  border-bottom: 2px solid #fff;
+  transition-property: border-bottom;
+  transition-duration: 1s;
 }
 
 ul li a:hover {
-  background-color: rgb(153, 153, 153);
+  border-bottom: 2px solid #aab74f;
 }
 
-/* who section */
+/* Home section */
 #home {
   position: relative;
   background: url(/img/toba.JPG);
