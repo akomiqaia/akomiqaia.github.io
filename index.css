@@ -80,6 +80,13 @@ ul li a:hover {
 /* end of who section */
 
 @media screen and (max-width: 749px) {
+  ul li a{
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 13px;
+    
+  }
+  
   #home {
     background-attachment: scroll;
     background-size: cover; 
