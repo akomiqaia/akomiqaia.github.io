@@ -37,13 +37,13 @@ ul li a{
   display: inline-block;
   color: rgb(0, 0, 0);
   text-align: center;
-  padding: 14px 16px;
+  padding: 6px 8px;
   text-decoration: none;
   font-size: 13px;
   box-shadow: rgba(0, 0, 0, 0.52);
   border-bottom: 2px solid #fff;
   transition-property: border-bottom;
-  transition-duration: 1s;
+  transition-duration: 0.7s;
 }
 
 ul li a:hover {
@@ -81,7 +81,7 @@ ul li a:hover {
 
 @media screen and (max-width: 749px) {
   ul li a{
-    padding: 8px 10px;
+    padding: 6px 8px;
     text-decoration: none;
     font-size: 13px;
     
