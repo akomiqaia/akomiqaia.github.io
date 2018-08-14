@@ -79,3 +79,15 @@ ul li a:hover {
 
 /* end of who section */
 
+@media screen and (max-width: 749px) {
+  #home {
+    background-attachment: scroll;
+    background-size: cover; 
+  }
+}
+
+@media screen and (min-height: 900px) {
+  #home {
+    min-height: 1000px;
+  }
+} 
