@@ -37,7 +37,7 @@ ul li a{
   display: inline-block;
   color: rgb(0, 0, 0);
   text-align: center;
-  padding: 14px 16px;
+  padding: 8px 10px;
   text-decoration: none;
   font-size: 13px;
   box-shadow: rgba(0, 0, 0, 0.52);
@@ -53,7 +53,7 @@ ul li a:hover {
 /* Home section */
 #home {
   position: relative;
-  background: url(/img/stone\ and\ mountains.JPG);
+  background: url(/img/stone\ and\ mountains\ -\ medium.JPG);
   height: 100%;
   min-height: 650px;
   background-size: cover;
@@ -82,10 +82,13 @@ ul li a:hover {
 .social-media-container {
   padding-top: 30px;
 }
+.social-media-container a {
+  display: inline-block;
+}
 .social-media-container img {
   width: 30px;
   background-color: rgb(255, 255, 255);
-  opacity: 0.8;
+  opacity: 0.6;
   border-radius: 50%;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.52);
 }
@@ -129,7 +132,7 @@ WHAT
 .what-content {
   display: flex;
   flex-wrap: wrap;
- 
+  padding-bottom: 50px;
 }
 .what-list li {
   display: inline-block;
@@ -188,25 +191,9 @@ WHERE
   justify-content: center;
   min-height: 400px;
 }
-.form-section {
-  
-  width: 50%;
-  background-color: #fff;
-}
-.form-section h2 {
-  padding-top: 50px;
-  /* color: #fff; */
-}
-.social-accounts {
-  width: 50%;
-  background-image: url(/img/toba.JPG);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.social-accounts h2 {
-  padding-top: 50px;
-  color: #fff;
-}
+
+
+
 
 /* ***********************
 END OF WHERE
@@ -222,6 +209,7 @@ END OF WHERE
   }
   
   #home {
+    background-image: url(/img/stone\ and\ mountains\ -\ small.JPG);
     background-attachment: scroll;
     background-size: cover; 
   }
@@ -240,4 +228,6 @@ END OF WHERE
 
   
 }
+
+
 
