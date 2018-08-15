@@ -86,7 +86,8 @@ ul li a:hover {
   display: inline-block;
 }
 .social-media-container img {
-  width: 30px;
+  width: 40px;
+  margin-right: 10px;
   background-color: rgb(255, 255, 255);
   opacity: 0.6;
   border-radius: 50%;
@@ -109,15 +110,17 @@ ABOUT ME
 
 #about-me .about-me-wrapper h2 {
   margin: 0;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 70px;
+  padding-bottom: 30px;
   font-size: 32px;
 }
 #about-me .about-me-wrapper p {
   margin: 0; 
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
   font-size: 24px;
+  text-align: justify;
+
 }
 /* ***********************
 END OF ABOUT ME
@@ -130,13 +133,16 @@ WHAT
   background-color: rgb(235, 235, 235);
 }
 .what-content {
-  display: flex;
-  flex-wrap: wrap;
   padding-bottom: 50px;
 }
+.what-list {
+  /* display: grid; */
+}
+
 .what-list li {
   display: inline-block;
   margin: 30px 40px;
+  
 }
 #what-main-title {
   color: #4a4a4a;
@@ -184,15 +190,39 @@ WHERE
 
 #where {
   position: relative;
+  background-color: #a4b74f;
+  min-height: 300px;
 }
 .where-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  min-height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.where-title {
+  color: #fff;
+  border-bottom: 4px 4px 8px #4a4a4a;
 }
 
 
+.social-media-container-bottom {
+  padding-top: 30px;
+}
+.social-media-container-bottom a {
+  display: inline-block;
+}
+.social-media-container-bottom img {
+  width: 40px;
+  margin-right: 10px;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.6;
+  border-radius: 50%;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.52);
+}
+.social-media-container-bottom img:hover {
+  background-color: rgb(235, 235, 235);
+  opacity: 1;
+}
 
 
 /* ***********************
@@ -214,19 +244,17 @@ END OF WHERE
     background-size: cover; 
   }
 
-  .where-wrapper {
-    display: flex;
-    flex-direction: row;
-    min-height: 600px;
-  }
-  .form-section {
-    width: 100%;
-  }
-  .social-accounts {
-    width: 100%;
+  .social-media-container img {
+    width: 26px;
+    margin-right: 10px;
   }
 
-  
+  .social-media-container-bottom img {
+    width: 26px;
+    margin-right: 10px;
+  }
+
+   
 }
 
 
