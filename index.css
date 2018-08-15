@@ -83,7 +83,7 @@ ul li a:hover {
   padding-top: 30px;
 }
 .social-media-container img {
-  width: 40px;
+  width: 36px;
   background-color: rgb(255, 255, 255);
   opacity: 0.8;
   border-radius: 50%;
@@ -237,5 +237,7 @@ END OF WHERE
   .social-accounts {
     width: 100%;
   }
+
+  
 }
 
