@@ -79,6 +79,20 @@ ul li a:hover {
   color: #fff;
 }
 
+.social-media-container {
+  padding-top: 30px;
+}
+.social-media-container img {
+  width: 40px;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.8;
+  border-radius: 50%;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.52);
+}
+.social-media-container img:hover {
+  background-color: rgb(235, 235, 235);
+  opacity: 1;
+}
 /* end of home section */
 
 /* **********************
