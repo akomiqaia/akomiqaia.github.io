@@ -135,9 +135,10 @@ WHAT
 .what-content {
   padding-bottom: 50px;
 }
-.what-list {
+/* .what-list {
   /* display: grid; */
-}
+ 
+
 
 .what-list li {
   display: inline-block;
