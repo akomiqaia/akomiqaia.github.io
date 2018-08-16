@@ -281,5 +281,11 @@ END OF WHERE
   }
 }
 
+@media screen and (min-width: 1400px) {
+  .what-list {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
 
 
