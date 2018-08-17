@@ -107,7 +107,6 @@ ABOUT ME
   min-height: 400px;
 }
 
-
 #about-me .about-me-wrapper h2 {
   margin: 0;
   padding-top: 70px;
@@ -283,7 +282,7 @@ END OF WHERE
 
 @media screen and (min-width: 1400px) {
   .what-list {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 
