@@ -124,6 +124,9 @@ ABOUT ME
 #about-me .about-me-wrapper p a {
   color: #4a4a4a;
 }
+#quote {
+  font-size: 40px; 
+}
 
 /* ***********************
 END OF ABOUT ME
