@@ -10,13 +10,19 @@ html {
   }
   
   .keys {
-    display: flex;
-    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 100px;
     min-height: 100vh;
     align-items: center;
     justify-content: center;
   }
-  
+  .left-keys, .right-keys {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 30px;
+  }
   .key {
     border: .4rem solid black;
     border-radius: .5rem;
