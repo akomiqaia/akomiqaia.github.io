@@ -133,58 +133,13 @@ END OF ABOUT ME
 ************************* */
 
 /* ***********************
-WHAT
+carousel
 ************************* */
-/* #what {
-  background-color: rgb(235, 235, 235);
-}
 #what-main-title {
   color: #4a4a4a;
-  padding-top: 50px;
+  padding: 20px;
 }
 
-.what-content {
-  padding-bottom: 50px;
-}
-.what-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-flow: dense;
-}
-
-.what-value {
-  position: relative;
-  display: block;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  font-size: 24px;
-  line-height: 35px;
-  color: #4a4a4a;
-}
-.what-value::after {
-  margin-left: -65px;
-  width: 132px;
-  display: block;
-  position: absolute;
-  content: "";
-  bottom: 0;
-  left: 50%;
-  margin-left: -51px;
-  width: 102px;
-  height: 5px;
-  background: #a4b74f
-}
-.what-description {
-  display: inline-block;
-  max-width: 200px;
-  color: #4a4a4a;
-} */
-/* ***********************
-END OF WHAT
-************************* */
-/* ***********************
-WHAT carousel alternative
-************************* */
 .carousel {
   position: relative;
   height: 500px;
@@ -291,8 +246,10 @@ WHERE
   flex-wrap: wrap;
   background-color: #a4b74f;
   height: 300px;
+  top:50px
 }
 .where-wrapper {
+  
   position: absolute;
   display: block;
   top: 50%;
