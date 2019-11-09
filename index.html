@@ -124,12 +124,12 @@
     <h2 id="what-main-title">What Else?</h2>
   </div>
   <div class="carousel">
-    <button class="carousel__button carousel__button--left">
+    <button class="carousel__button carousel__button--left" onclick="plusSlides(-1)">
       <img src="./img/left.svg">
     </button>
     <div class="carousel__track-container">
       <ul class="carousel__track">
-        <li class="carousel__slide current-slide">
+        <li class="carousel__slide active-slide">
           <div class="carousel__image__info">
             <img src="./img/stone and mountains - small.JPG" class="carousel__image">
             <div class="image__description">
@@ -141,7 +141,7 @@
             </div>
           </div>
         </li>
-        <li class="carousel__slide">
+        <li class="carousel__slide active-slide">
           <div class="carousel__image__info">
             <img src="./img/page_baran_networks.png" class="carousel__image">
             <div class="image__description">
@@ -150,58 +150,60 @@
             </div>
           </div>
         </li>
-        <li class="carousel__slide">
+        <li class="carousel__slide active-slide">
+            <div class="carousel__image__info">
+              <img src="./img/stone and mountains - small.JPG" class="carousel__image">
+              <div class="image__description">
+                <b class="what-value"> Tour Guide</b>
+                <p class="what-description">
+                  I enjoyed a lot being a Free Walking Tour Guide in Georgia. That improved my skills in information delivery and analysis.
+                </p>
+              </div>
+          </div>
+        </li>
+        <li class="carousel__slide active-slide">
           <div class="carousel__image__info">
             <img src="./img/stone and mountains - small.JPG" class="carousel__image">
             <div class="image__description">
-              <b class="what-value"> Tour Guide</b>
+              <b class="what-value">Hospitality</b>
               <p class="what-description">
-                I enjoyed a lot being a Free Walking Tour Guide in Georgia. That improved my skills in information delivery and analysis.
+                I have been working as a bartender since March. All pressure and craziness can be hard, but all the negative energy is always discharged by co-workers.
               </p>
             </div>
-        </div>
-      </li>
-      <li class="carousel__slide">
-        <div class="carousel__image__info">
-          <img src="./img/stone and mountains - small.JPG" class="carousel__image">
-          <div class="image__description">
-            <b class="what-value">Hospitality</b>
-            <p class="what-description">
-              I have been working as a bartender since March. All pressure and craziness can be hard, but all the negative energy is always discharged by co-workers.
-            </p>
           </div>
-        </div>
-      </li>
-      <li class="carousel__slide">
-        <div class="carousel__image__info">
-          <img src="./img/stone and mountains - small.JPG" class="carousel__image">
-          <div class="image__description">
-            <b class="what-value">Outdoor</b>
-            <p class="what-description">
-              Big fan of climbing, Damn Good Coffee and Cherry Pie. Contemporary ballet and classical music happen when tickets are affordable. 
-            </p>
+        </li>
+        <li class="carousel__slide active-slide">
+          <div class="carousel__image__info">
+            <img src="./img/stone and mountains - small.JPG" class="carousel__image">
+            <div class="image__description">
+              <b class="what-value">Outdoor</b>
+              <p class="what-description">
+                Big fan of climbing, Damn Good Coffee and Cherry Pie. Contemporary ballet and classical music happen when tickets are affordable. 
+              </p>
+            </div>
           </div>
-        </div>
-      </li>
-      <li class="carousel__slide">
-        <div class="carousel__image__info">
-          <img src="./img/stone and mountains - small.JPG" class="carousel__image">
-          <div class="image__description">
-            <b class="what-value"> Weird Things </b>
-            <p class="what-description">
-              Nothing at all, I'm totally normal. But I do love meeting weird people and spending some time with them. 
-            </p>
+        </li>
+        <li class="carousel__slide active-slide">
+          <div class="carousel__image__info">
+            <img src="./img/stone and mountains - small.JPG" class="carousel__image">
+            <div class="image__description">
+              <b class="what-value"> Weird Things </b>
+              <p class="what-description">
+                Nothing at all, I'm totally normal. But I do love meeting weird people and spending some time with them. 
+              </p>
+            </div>
           </div>
-        </div>
-      </li>
+        </li>
     </ul>
     
   </div>
   
-  <button class="carousel__button carousel__button--right">
+  <button class="carousel__button carousel__button--right" onclick="plusSlides(1)">
       <img src="./img/right.svg">
     </button>
   </div>
+  <img src="./img/play.svg" alt="play buutton" class="carousel-play-stop" onclick="startCarousel()">  
+  <img src="./img/pause.svg" alt="pause button" class="carousel-play-stop" onclick="stopCarousel()">
 </section>
   
   <!--  -->

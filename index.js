@@ -1,66 +1,61 @@
-const track = document.querySelector('.carousel__track')
-const slides = Array.from(track.children)
+// carousel from w3school
+let slideIndex = 1
+let slideShowTimer
+showSlides(slideIndex)
 
-const nextButton = document.querySelector('.carousel__button--right')
-const prevButton = document.querySelector('.carousel__button--left')
-
-// arrange the slides position
-// we arrange all the slides next to each other
-// and add css style to hide the overflow
-
-const slideWidth = slides[0].getBoundingClientRect().width
-for (let i = 0; i < slides.length; i++) {
-  slides[i].style.left = slideWidth * i + 'px'
+function plusSlides (n) {
+  clearTimeout(slideShowTimer)
+  console.log(slideIndex)
+  showSlides((slideIndex += n))
+  slideIndex--
+  timedSlideShow()
 }
 
-// eventlisten when the page loads
-// setInterval(moveToSlide, 3000)
-// function changeCarousel () {
-//   let currentSlide = track.querySelector('.current-slide')
-//   let lastChild = track.lastElementChild
-//   // if (currentSlide == lastChild) {
-//   //   currentSlide = slides[0]
-//   // }
-//   let nextSlide = currentSlide.nextElementSibling
-//   moveToSlide(track, currentSlide, nextSlide)
-//   setTimeout(changeCarousel(), 4000)
-// }
-
-// window.onload = changeCarousel
-// carousel works in timeinterval
-// every 3 seconds moves class 'current-slide' by next sibling
-
-// on hover pause the carousel
-
-// function to move slide
-
-function moveToSlide (track, currentSlide, targetSlide) {
-  track.style.transform = 'translateX(-' + targetSlide.style.left + ')'
-  currentSlide.classList.remove('current-slide')
-  targetSlide.classList.add('current-slide')
+// arrow navigations for the slideshow
+document.onkeydown = function (e) {
+  switch (e.keyCode) {
+    case 37:
+      plusSlides(-1)
+      break
+    case 39:
+      plusSlides(1)
+  }
 }
 
-// next buuton click
-nextButton.addEventListener('click', e => {
-  // find the current slide
-  const currentSlide = track.querySelector('.current-slide')
-  let nextSlide = currentSlide.nextElementSibling
-  if (track.lastElementChild == currentSlide) {
-    nextSlide = track.firstElementChild
+// function to show the slideshow
+function showSlides (n) {
+  const slides = document.querySelectorAll('.carousel__slide')
+  slides.forEach((x) => {
+    x.style.display = 'none'
+  })
+  if (slideIndex > slides.length || n > slides.length) {
+    slideIndex = 1
   }
-  // move to the next slide
-  moveToSlide(track, currentSlide, nextSlide)
-})
-
-// previous button click
-prevButton.addEventListener('click', e => {
-  const currentSlide = track.querySelector('.current-slide')
-  let prevSlide = currentSlide.previousElementSibling
-  if (track.firstElementChild == currentSlide) {
-    prevSlide = track.lastElementChild
+  if (n < 1) {
+    slideIndex = slides.length
   }
-  // move to previous slide
-  moveToSlide(track, currentSlide, prevSlide)
-})
+  slides[slideIndex - 1].style.display = 'block'
+}
+//  function to setup the interval for looping carousel
+function timedSlideShow () {
+  slideIndex++
+  showSlides(slideIndex)
+  slideShowTimer = setTimeout(timedSlideShow, 3000)
+}
+timedSlideShow()
 
-// add key press events here, for pause and play as well
+// play and stop button funcitonality
+
+let carouselOn = 0
+
+function startCarousel() {
+  if (!carouselOn) {
+    carouselOn = 1
+    timedSlideShow()
+  }
+}
+
+function stopCarousel() {
+  clearTimeout(slideShowTimer)
+  carouselOn = 0
+}

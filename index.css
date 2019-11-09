@@ -166,10 +166,30 @@ carousel
 }
 
 .carousel__slide {
+  /* from w3school */
+  display: none;
+  /* from youtube */
   position: absolute;
   width: 100%;
   top:0;
   bottom: 0;
+}
+
+.active-slide {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
 .carousel__button {
@@ -187,13 +207,20 @@ carousel
 
 .carousel__button--right {
   right: -10px;
-
 }
 
 .carousel__button img {
   width: 70px;
 }
 
+.carousel-play-stop {
+  position: relative;
+  top: 20px;
+  width: 60px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
 .carousel__image__info {
   display: block;
   width: 100%;
