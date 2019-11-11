@@ -135,9 +135,15 @@ END OF ABOUT ME
 /* ***********************
 carousel
 ************************* */
+
+
+
 #what-main-title {
   color: #4a4a4a;
-  padding: 20px;
+  margin: 0;  
+  padding-top: 70px;
+  padding-bottom: 30px;
+  font-size: 32px;
 }
 
 .carousel {
@@ -199,6 +205,7 @@ carousel
   background: transparent;
   border: 0;
   cursor: pointer;
+  z-index: 200;
 }
 
 .carousel__button--left{
@@ -214,13 +221,21 @@ carousel
 }
 
 .carousel-play-stop {
-  position: relative;
-  top: 20px;
+  position: absolute;
+  bottom: 0px;
   width: 60px;
   background: transparent;
   border: 0;
   cursor: pointer;
 }
+.stop {
+left: 40% 
+}
+
+.play {
+right: 40%;
+}
+
 .carousel__image__info {
   display: block;
   width: 100%;
@@ -273,7 +288,7 @@ WHERE
   flex-wrap: wrap;
   background-color: #a4b74f;
   height: 300px;
-  top:50px
+  
 }
 .where-wrapper {
   
@@ -347,6 +362,43 @@ END OF WHERE
     width: 31px;
     margin-right: 5px;
   }
+/* what section */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  padding: 0;
+}
+
+.carousel-play-stop { 
+  width: 40px;
+}
+
+.carousel__button {
+  position: absolute;
+  height: 100%;
+  z-index: 999;
+  background: #2a2a2a;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.carousel__button:hover {
+  opacity: 1;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+}
+.carousel__button--right {
+  right: 0px;
+  border-radius: 2px 0 0 2px;
+}
+
+.carousel__button--left {
+  left: 0px;
+  border-radius: 0 2px 2px 0;
+}
+
+
+/* end of what section */
 
   #where {
     height: 400px;
@@ -355,13 +407,23 @@ END OF WHERE
     grid-template-columns: repeat(2, 1fr);    
   }
    
-}
+
 
 @media screen and (max-width: 500px) {
   .what-list {
     grid-template-columns: 1fr;
   }
+  .carousel-play-stop { 
+    width: 35px;
+  }
+.carousel__button img {
+  width: 40px;
 }
+}
+.carousel-play-stop {
+  width: 50px;
+}
+
 
 @media screen and (min-width: 1400px) {
   .what-list {

@@ -5,7 +5,6 @@ showSlides(slideIndex)
 
 function plusSlides (n) {
   clearTimeout(slideShowTimer)
-  console.log(slideIndex)
   showSlides((slideIndex += n))
   slideIndex--
   timedSlideShow()
