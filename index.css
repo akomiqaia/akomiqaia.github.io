@@ -228,13 +228,6 @@ carousel
   border: 0;
   cursor: pointer;
 }
-/* .stop {
-left: 40% 
-}
-
-.play {
-right: 40%;
-} */
 
 .carousel__image__info {
   display: block;
@@ -247,9 +240,19 @@ right: 40%;
   object-fit: cover;
   width: 100%;
   height: 100%;
-  clip-path: polygon(100% 0, 100% 35%, 60% 35%, 50% 50%, 60% 65%, 100% 65%, 100% 100%, 0 100%, 0 0);
-  shape-outside: polygon(100% 0, 100% 35%, 60% 35%, 50% 50%, 60% 65%, 100% 65%, 100% 100%, 0 100%, 0 0);
-}
+  }
+.image__description {
+  color: #f2f2f2;
+  width: 80px;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background: #2a2a2a;
+  opacity: 0.7;
+  }
 
 .what-value {
   position: relative;
@@ -257,7 +260,7 @@ right: 40%;
   margin-bottom: 10px;
   font-size: 24px;
   line-height: 35px;
-  color: #4a4a4a;
+  color: #f2f2f2;
 }
 .what-value::after {
   margin-left: -65px;
@@ -375,7 +378,7 @@ END OF WHERE
 
 .carousel__button {
   position: absolute;
-  height: 100%;
+  height: 20%;
   z-index: 999;
   background: #2a2a2a;
   opacity: 0.5;
@@ -394,6 +397,12 @@ END OF WHERE
 .carousel__button--left {
   left: 0px;
   border-radius: 0 2px 2px 0;
+}
+
+
+.what-value {
+  color: #f2f2f2;
+
 }
 #where {
   height: 400px;
@@ -417,6 +426,8 @@ END OF WHERE
   .carousel__button img {
     width: 40px;
   }
+  
+
 }
 
 
