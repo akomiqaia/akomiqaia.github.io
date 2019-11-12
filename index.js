@@ -43,7 +43,7 @@ function timedSlideShow () {
 }
 timedSlideShow()
 
-// play and stop button funcitonality
+// play and stop button funcitonality for carousel
 
 let carouselOn = 0
 

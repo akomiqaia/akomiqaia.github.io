@@ -18,7 +18,7 @@ body {
   left: 0;
   background-color: white;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.52);
-  z-index: 100;
+  z-index: 100000;
 }
 ul {
   list-style-type: none;
@@ -221,20 +221,20 @@ carousel
 }
 
 .carousel-play-stop {
-  position: absolute;
+  position: relative;
   bottom: 0px;
   width: 60px;
   background: transparent;
   border: 0;
   cursor: pointer;
 }
-.stop {
+/* .stop {
 left: 40% 
 }
 
 .play {
 right: 40%;
-}
+} */
 
 .carousel__image__info {
   display: block;
@@ -288,7 +288,6 @@ WHERE
   flex-wrap: wrap;
   background-color: #a4b74f;
   height: 300px;
-  
 }
 .where-wrapper {
   
@@ -396,16 +395,15 @@ END OF WHERE
   left: 0px;
   border-radius: 0 2px 2px 0;
 }
-
-
+#where {
+  height: 400px;
+}
+.social-media-container-bottom {
+  grid-template-columns: repeat(2, 1fr);    
+}
+}
 /* end of what section */
 
-  #where {
-    height: 400px;
-  }
-  .social-media-container-bottom {
-    grid-template-columns: repeat(2, 1fr);    
-  }
    
 
 
@@ -416,12 +414,9 @@ END OF WHERE
   .carousel-play-stop { 
     width: 35px;
   }
-.carousel__button img {
-  width: 40px;
-}
-}
-.carousel-play-stop {
-  width: 50px;
+  .carousel__button img {
+    width: 40px;
+  }
 }
 
 
@@ -430,6 +425,3 @@ END OF WHERE
     grid-template-columns: repeat(6, 1fr);
   }
 }
-
-
-
