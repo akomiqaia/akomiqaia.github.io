@@ -46,7 +46,7 @@ function showSlides (n) {
 function timedSlideShow () {
   slideIndex++
   showSlides(slideIndex)
-  slideShowTimer = setTimeout(timedSlideShow, 4000)
+  slideShowTimer = setTimeout(timedSlideShow, 7000)
 }
 timedSlideShow()
 
