@@ -459,7 +459,13 @@ END OF WHERE
   .carousel__button img {
     width: 40px;
   }
+  .play-pause::before{
+    content: ""
+  }
   
+  .play-pause::after {
+    content: ""
+  }
 
 }
 
