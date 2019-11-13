@@ -18,6 +18,13 @@ document.onkeydown = function (e) {
       break
     case 39:
       plusSlides(1)
+      break
+    case 83:
+      stopCarousel()
+      break
+    case 13:
+      startCarousel()
+      break
   }
 }
 
@@ -39,7 +46,7 @@ function showSlides (n) {
 function timedSlideShow () {
   slideIndex++
   showSlides(slideIndex)
-  slideShowTimer = setTimeout(timedSlideShow, 3000)
+  slideShowTimer = setTimeout(timedSlideShow, 4000)
 }
 timedSlideShow()
 
