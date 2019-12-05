@@ -54,14 +54,14 @@ timedSlideShow()
 
 let carouselOn = 0
 
-function startCarousel() {
+function startCarousel () {
   if (!carouselOn) {
     carouselOn = 1
     timedSlideShow()
   }
 }
 
-function stopCarousel() {
+function stopCarousel () {
   clearTimeout(slideShowTimer)
   carouselOn = 0
 }

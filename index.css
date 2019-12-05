@@ -22,7 +22,6 @@ body {
   background-color: white;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.52);
   z-index: 100000;
-
 }
 
 ul {
@@ -59,8 +58,7 @@ ul li a:hover {
 #home {
   position: relative;
   background: url(/img/stone\ and\ mountains\ -\ medium.JPG);
-  height: 100%;
-  min-height: 650px;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -81,9 +79,12 @@ ul li a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.52);
 }
 #home-text {
-  color: #fff;
+  position: absolute;
+  margin: 5px;
+  top: 60%;
+  left: 3%;
+  mix-blend-mode: screen;
 }
-
 .social-media-container {
   padding-top: 30px;
 }
@@ -373,7 +374,7 @@ END OF WHERE
 ************************* */
 
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 749px) and (orientation : landscape) {
   ul li a{
     padding: 6px 8px;
     text-decoration: none;
@@ -385,6 +386,9 @@ END OF WHERE
     background-image: url(/img/stone\ and\ mountains\ -\ small.JPG);
     background-attachment: scroll;
     background-size: cover; 
+  }
+  #home-text {
+    top: 40%;
   }
 
   .social-media-container img {
