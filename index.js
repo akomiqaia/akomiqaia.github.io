@@ -19,12 +19,6 @@ document.onkeydown = function (e) {
     case 39:
       plusSlides(1)
       break
-    case 83:
-      stopCarousel()
-      break
-    case 13:
-      startCarousel()
-      break
   }
 }
 
