@@ -1,4 +1,3 @@
-// carousel from w3school
 let slideIndex = 1
 let slideShowTimer
 showSlides(slideIndex)
@@ -47,15 +46,21 @@ timedSlideShow()
 // play and stop button funcitonality for carousel
 
 let carouselOn = 0
+let stop = document.querySelector('.stop')
+let play = document.querySelector('.play')
 
 function startCarousel () {
   if (!carouselOn) {
     carouselOn = 1
     timedSlideShow()
+    play.style.display = 'none'
+    stop.style.display = 'block'
   }
 }
 
 function stopCarousel () {
   clearTimeout(slideShowTimer)
   carouselOn = 0
+  stop.style.display = 'none'
+  play.style.display = 'block'
 }
