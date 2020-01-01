@@ -231,9 +231,6 @@ carousel
   right: 0px;
 }
 
-.carousel__button img {
-  width: 70px;
-}
 
 .play {
   position: absolute;
@@ -281,8 +278,8 @@ carousel
 
 .descrition-card {
   position: relative;
-  width: 50%;
-  height: 50%;
+  width: 60%;
+  height: 70%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -315,9 +312,10 @@ carousel
   height: 8px;
   background-image: linear-gradient(to right top, #8963c8, #7957c7, #674bc6, #503fc5, #3035c5);}
 .what-description {
-  font-size: 20px;
-  line-height:25px;
-  letter-spacing: 0.7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
 }
 
 #projects {
@@ -344,50 +342,12 @@ WHERE
 #where {
   position: relative;
   display: flex;
-  height: 60vh;
 }
 #where-footer .about-me-wrapper {
   padding-top: 5vh;
   padding-bottom: 5vh ;
 }
-#contact-me {
-  width: 50%;
-  padding-top: 50px;
-  background-color: #eee;
-  
-}
-.contact-form {
-  display: block;
-}
-.contact-field {
-  display: block;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 50%;
-  background-color: #eee;
-  outline: none;
-  color: #3a4b40;
-  font-size: 16px;
-  border: solid 9px #eee;
-  border-radius: 20px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25),
-             -5px -5px 5px #FFFFFF;
-}
-
-.contact-field:focus {
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15),
-             -5px -5px 5px #FFFFFF;
-}
-
-.submit {
-  font-size: 20px;
-}
-.submit, #contact-me .where-title {
-  /* background-clip: text;
-  background: -webkit-linear-gradient(#b2c96d, #71ac62, #278e5c);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+ .where-title {
   color: #4835BC;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25),
               -4px -4px 4px #fff;
@@ -396,7 +356,7 @@ WHERE
 .where-wrapper {
   position: relative;
   display: block;
-  width:50%;
+  width:100%;
   padding-top: 50px;
   background-image: linear-gradient(to top, #8963c8, #7957c7, #674bc6, #503fc5, #3035c5);
 }
@@ -410,9 +370,9 @@ WHERE
 
 .social-media-container-bottom {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-auto-flow: dense;
-  padding-top: 30px;
+  padding: 30px 15%;
 }
 .social-media-container-bottom a {
   display: inline;
@@ -454,15 +414,16 @@ END OF WHERE
     background-attachment: scroll;
     background-size: cover; 
   }
-  
+  .social-media-container-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: dense;
+    padding: 30px 15%;
+  }
   
   .social-media-container img {
     width: 26px;
     margin-right: 10px;
-  }
-  
-  .what-list {
-    grid-template-columns: 1fr 1fr;
   }
   
   .social-media-container-bottom img {
@@ -471,23 +432,16 @@ END OF WHERE
   }
   /* what section */
   .carousel {
-    position: relative;
-    width: 100%;
-    height: 400px;
+    height: 60vh;
     padding: 0;
   }
   
   .carousel-play-stop { 
     width: 40px;
-    margin: 10px;
-    
   }
   
   .carousel__button {
-    position: absolute;
     font-size: 2em;
-    z-index: 999;
-    cursor: pointer;
   }
   #projects {
     grid-template-columns: repeat(1, 1fr);
@@ -498,6 +452,7 @@ END OF WHERE
   }
   #contact-me, .where-wrapper {
     width: 100%;
+    min-height: 75vh;
   }
 }
 /* end of what section */
@@ -506,29 +461,12 @@ END OF WHERE
 
 
 @media screen and (max-width: 500px) {
-  .what-list {
-    grid-template-columns: 1fr;
-  }
+
   .carousel-play-stop { 
     width: 35px;
   }
-  .carousel__button img {
-    width: 40px;
-  }
-  .play-pause::before{
-    content: ""
-  }
-  
-  .play-pause::after {
-    content: ""
-  }
-
-
-}
-
-
-@media screen and (min-width: 1400px) {
-  .what-list {
-    grid-template-columns: repeat(6, 1fr);
+  .project_card {
+    position: relative;
+    max-width: 300px;
   }
 }
