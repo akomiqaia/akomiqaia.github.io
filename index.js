@@ -8,7 +8,7 @@ let play = document.querySelector('.play') // start button
 function timedSlideShow () {
   slideIndex++
   showSlides(slideIndex)
-  slideShowTimer = setTimeout(timedSlideShow, 2000)
+  slideShowTimer = setTimeout(timedSlideShow, 5000)
 }
 timedSlideShow()
 
@@ -37,7 +37,6 @@ document.onkeydown = function (e) {
 // function to show the slideshow
 function showSlides (n) {
   const slides = document.querySelectorAll('.carousel__slide')
-  console.log(slides)
   slides.forEach((x) => {
     x.style.display = 'none'
   })
@@ -47,7 +46,6 @@ function showSlides (n) {
   if (n < 1) {
     slideIndex = slides.length
   }
-  console.log(slideIndex)
   slides[slideIndex - 1].style.display = 'block'
   play.style.display = 'none'
   stop.style.display = 'block'
