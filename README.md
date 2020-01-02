@@ -1,2 +1,2 @@
 # akomiqaia.github.io
-this is personal webpage
+This is a personal webpage
