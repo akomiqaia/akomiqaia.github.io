@@ -24,14 +24,6 @@ body {
   z-index: 100000;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: transparent;
-  text-align: center;
-}
 ul li {
   display: inline;
 } 
@@ -51,6 +43,7 @@ ul li a{
 }
 
 ul li a:hover {
+  color: #4835BC;
   border-bottom: 2px solid #4835BC;
 }
 
@@ -71,7 +64,7 @@ ul li a:hover {
   transform: translate(-50%, -50%);
 }
 .avatar-hero img {
-  width: 150px;
+  width: 200px;
   margin: 0 auto;
   border: solid 3px #dfdfdf;
   border-radius: 50%;
@@ -139,210 +132,24 @@ ABOUT ME
 END OF ABOUT ME
 ************************* */
 
-/* ***********************
-carousel
-************************* */
-
-
-
-#what-main-title {
-  color: #4a4a4a;
-  margin: 0;  
-  padding-top: 70px;
-  padding-bottom: 30px;
-  font-size: 32px;
-}
-/* **************************** */
-/* carosuel styling */
-/* **************************** */
-.carousel {
-  position: relative;
-  height: 80vh;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.carousel__track-container {
-  position: relative;
-  height: 100%;
-  overflow: hidden;
-}
-
-.carousel__track {
-  overflow: visible;
-  position: relative;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  height: 100%;
-  transition: transform 250ms ease-in;
-}
-
-.carousel__slide {
-  /* display: none; */
-  position: absolute;
-  width: 100%;
-  top:0;
-  bottom: 0;
-}
-
-.active-slide {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-/* fade animations for the transtions between the slides */
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-/* carousel buttons */
-.carousel__button {
-  position: absolute;
-  font-size: 3em;
-  top: 50%;
-  transform: translateY(-50%);
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-  color: #dfdfdf;
-  height: 100%;
-  background: #3a4b40;
-  width: 7vw;
-  opacity: 0.5;
-  z-index: 200;
-}
-
-.carousel__button:hover {
-  opacity: 1;
-}
-.carousel__button--left{
-  left: 0px;
-
-}
-
-.carousel__button--right {
-  right: 0px;
-}
-
-.carousel-play-stop {
-  position: absolute;
-  width: 60px;
-  cursor: pointer;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-}
-.play {
-  display: none;
-  
-}
-.stop {
-  display: block;
-}
-
-/* the end of carousel buttons */
-
-/* carosel image and text styles */
-.carousel__image__info {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.carousel__image {
-  float: left;
-  object-fit: cover;
-  width: 50%;
-  height: 100%;
-  }
-.image__description {
-  /* position: relative; */
-  width: 50%;
-  height: 100%;
-  float: right;
-  background-color: #eee;
-  }
 
 .descrition-card {
-  position: relative;
-  width: 60%;
-  height: 70%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #3a4b40;
-  font-size: 16px;
-  border: solid 9px #eee;
-  border-radius: 50px;
-  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.25),
-             -20px -20px 20px #FFFFFF;
-}
-
-.what-value {
-  position: relative;
-  display: inline-block;
-  padding-top: 50px;
-  text-align: center;
-  font-size: 24px;
-  line-height: 35px;
-  color: #3a4b40;
-}
-.what-value::after {
-  display: block;
-  position: relative;
-  margin-top: 20px;
-  content: "";
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  height: 8px;
-  background-image: linear-gradient(to right top, #8963c8, #7957c7, #674bc6, #503fc5, #3035c5);}
-.what-description {
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 16px;
-  letter-spacing: 0.5px;
+  margin-top: 2rem;
+  border: none;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25)
 }
 
 #projects {
-  position: relative;
   padding-left: 15%;
   padding-right: 15%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.project_card {
-  position: relative;
-  margin: 30px auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.project_button {
-  background: #4835BC;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 50px;
-  width: 205px;
-  height: 55px;
-  cursor: pointer;
-  color: #fff;
-  padding: 30px auto;
 }
 
-.project_button:hover {
-  box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.25);
-
+.card-body {
+  min-width: 50%;
+  margin: 0 auto;
 }
+
+
 /* end of style of carousel and image styling as well */
 
 /* ***********************
@@ -413,6 +220,8 @@ END OF WHERE
   #home-text {
     top: 40%;
   }
+
+
 }
 
 @media screen and (max-width: 749px) {
@@ -422,6 +231,7 @@ END OF WHERE
     font-size: 13px;
     
   }
+  
   
   #home {
     background-image: url(/img/stone\ and\ mountains\ -\ small.JPG);
@@ -445,18 +255,7 @@ END OF WHERE
     margin-right: 5px;
   }
   /* what section */
-  .carousel {
-    height: 60vh;
-    padding: 0;
-  }
-  
-  
-  .carousel__button {
-    font-size: 2em;
-  }
-  #projects {
-    grid-template-columns: repeat(1, 1fr);
-  }
+ 
 
   #where {
     flex-direction: column;
@@ -465,6 +264,7 @@ END OF WHERE
     width: 100%;
     min-height: 75vh;
   }
+  
 }
 /* end of what section */
 
@@ -473,28 +273,8 @@ END OF WHERE
 
 @media screen and (max-width: 500px) {
 
-  .carousel-play-stop { 
-    top: 40%;
-  }
-  .carousel {
-    height: 100vh;
-  }
-  .carousel__image {
-    width: 100%;
-    height: 40%;
-  }
-  .image__description {
-    width: 100%;
-    height: 60%;
-    float: right;
-    background-color: #eee;
-  }
-  .descrition-card {
-    width: 80%;
-    height: 80%;
-  }
-  .project_card {
-    position: relative;
-    max-width: 300px;
+  #projects {
+    padding-left: 0%;
+    padding-right: 0%;
   }
 }
