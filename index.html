@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="The webpage is build for Fac application">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
     <link
       href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
       rel="stylesheet"
@@ -19,28 +21,47 @@
   </head>
 
   <body>
-    <header class="nav-wrapper">
+    
+    <header class="navbar navbar-expand-sm nav-wrapper ">
       <nav>
-        <div class="container">
-          <ul class="nav-ul">
-            <li>
-              <a href="#home">HOME</a>
+        <button  class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+          <span>
+            <div id="hamburger" class="hamburger hamburger--arrow-r">
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
+            </div>
+          </span>
+        </button>
+        <div class=" collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0" >
+            <li class="nav-item">
+              <a class="nav-link" href="#home">HOME</a>
             </li>
             <li>
-              <a href="#about-me">ABOUT ME</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#home">PROJECTS</a>
+              </li>
+              <li class="nav-item">
+              <a  class="nav-link" href="#about-me">ABOUT ME</a>
             </li>
-            <li>
-              <a href="#what">WHAT</a>
-            </li>
-            <li>
-              <a href="#where">WHERE</a>
+            <li class="nav-item">
+              <a  class="nav-link" href="#where">WHERE</a>
             </li>
           </ul>
         </div>
       </nav>
+      
+
     </header>
 
-    <div>
+  
       <section id="home">
         <svg
           id="home-text"
@@ -113,24 +134,17 @@
         </svg>
         <div class="home-wrapper">
           <div class="avatar-hero">
-            <img src="/img/cv_2.jpg" alt="avatar-hero" />
+            <img src="/img/catshould.jpg" alt="avatar-hero" />
           </div>
           <div class="social-media-container">
-            <a href="https://www.freecodecamp.org/akomiqaia" target="blank">
-              <img src="/img/glyph.png" alt="free Code Camp" />
-            </a>
+            
             <a href="https://github.com/akomiqaia/akomiqaia.github.io" target="blank">
               <img
                 src="/img/GitHub-Mark-Light-120px-plus.png"
                 alt="Git Hub repository"
               />
             </a>
-            <a href="https://www.codewars.com/users/akomiqaia" target="blank">
-              <img
-                src="/img/open-uri20130901-5708-1gh38y4.png"
-                alt="code wars portfolio"
-              />
-            </a>
+           
             <a href="https://www.linkedin.com/in/akaki-mikaia/" target="blank">
               <img src="/img/in.png" alt="linkedIn account" />
             </a>
@@ -171,208 +185,54 @@
           </p>
         </div>
       </section>
-      <!--  carousel for what else section -->
-      <section id="what">
-        
-        <div class="what-intro">
-          <h2 id="what-main-title">What Else?</h2>
-        </div>
-        
-          
-        <div class="carousel">
-            <img
-            src="./img/play.svg"
-            alt="play button"
-            class="carousel-play-stop play"
-            onclick="startCarousel()"
-          />
-          <img
-            src="./img/pause.svg"
-            alt="pause button"
-            class="carousel-play-stop stop"
-            onclick="stopCarousel()"
-          />
-          <button
-            class="carousel__button carousel__button--left"
-            onclick="plusSlides(-1)"
-          > <
-          </button>
-          <div class="carousel__track-container">
-            <ul class="carousel__track">
-              <li class="carousel__slide active-slide">
-                <div class="carousel__image__info">
-                  <img src="./img/uni.jpg" class="carousel__image" alt="university picture" />
-                  <div class="image__description">
-                      <div class="descrition-card">
 
-                    <b class="what-value">BA Degree</b>
-                    <p class="what-description">
-                      My mum really wanted me to be a famous mathematician, but
-                      in the end, I ended up with a degree in Literature
-                      Studies.
-                    </p>
-                  </div>
-                  </div>
-                
-                </div>
-              </li>
-              <li class="carousel__slide active-slide">
-                <div class="carousel__image__info">
-                  <img src="./img/holland.jpg" class="carousel__image" alt="houses in Holland" />
-                  <div class="image__description">
-                    <div class="descrition-card">
-                      <b class="what-value">Exchange in Holland</b>
-                      <p class="what-description">
-                        I studied ten months at the University of Groningen, where
-                        I encountered lots of beautiful ideas and people.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="carousel__slide active-slide">
-                <div class="carousel__image__info">
+  
 
-                  <img src="./img/tourguide.jpg" class="carousel__image" alt="group of tourists" />
-                  <div class="image__description">
-                      <div class="descrition-card">
+     <section id="projects">
 
-                    <b class="what-value"> Tour Guide</b>
-                    <p class="what-description">
-                      I enjoyed a lot being a Free Walking Tour Guide in
-                      Georgia. That improved my skills in information delivery
-                      and analysis.
-                    </p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="carousel__slide active-slide">
-                <div class="carousel__image__info">
-                  
-                  <img src="./img/beer.jpg" class="carousel__image" alt="beer"/>
-                  <div class="image__description">
-                      <div class="descrition-card">
-                    <b class="what-value">Hospitality</b>
-                    <p class="what-description">
-                      I have been working as a bartender since March. All
-                      pressure and craziness can be hard, but all the negative
-                      energy is always discharged by co-workers.
-                    </p>
-                  </div>
-                    </div>
-                </div>
-              </li>
-              <li class="carousel__slide active-slide">
-                <div class="carousel__image__info">
-                  
-                  <img src="./img/outdoor.JPG" class="carousel__image" alt="outdoors"/>
-                  <div class="image__description">
-                      <div class="descrition-card">
-                    <b class="what-value">Outdoor</b>
-                    <p class="what-description">
-                      Big fan of climbing, Damn Good Coffee and Cherry Pie.
-                      Contemporary ballet and classical music happen when
-                      tickets are affordable.
-                    </p>
-                  </div>
-                  </div>
-                </div>
-              </li>
-              <li class="carousel__slide active-slide">
-                <div class="carousel__image__info">
-                  
-                  <img src="./img/me2.JPG" class="carousel__image" alt="very weird picutre of mine"/>
-                  <div class="image__description">
-                      <div class="descrition-card">
-                    <b class="what-value"> Weird Things </b>
-                    <p class="what-description">
-                      Nothing at all, I'm totally normal. But I do love meeting
-                      weird people and spending some time with them.
-                    </p>
-                  </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
+      <div class="card mb-3 descrition-card">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="./img/pm.png" class="card-img" alt="Prepare me image">
           </div>
-
-          <button
-            class="carousel__button carousel__button--right"
-            onclick="plusSlides(1)"
-          >>
-          </button>
-        </div>
-        
-      </section>
-
-      <!--  -->
-    <div id="where-footer">
-        <div class="about-me-wrapper">
-            <p>
-              My philosophy of life can be described as deconstructionist. This
-              way of thinking means to deconstruct or remove centres and help
-              marginal areas to become more visible, but not for the sake of
-              replacing the centre. It's a state where marginal and center starts
-              co-existing together in one harmonious circle. At the moment my aim
-              is to help the new world to reach this harmonious state where
-              everything is decentralized and spread around, like a
-              <a
-                href="https://en.wikipedia.org/wiki/Rhizome_(philosophy)"
-                target="blank"
-                >Rhizome</a
-              >. I believe that is achievable by helping local businesses and
-              startups and by building environments that are free and easily
-              accessible.
-            </p>
-            <br />
-            <p>
-              To accomplish my goal, I am applying to FAC for the second time. After the first attempt,  I did not give up and continued full-time work as a bartender to save up money for the next cohort. I spent more than a year teaching myself web development in the morning and working as a bartender at night. During this year, I have been able to learn <b>React.js</b> and to finish one of the pillars for understanding computer science, with <b>CS50 Introduction to Computer Science</b>, a course from Harvard University. Some of the projects accomplished during my self-learning path are just down here:
-            </p>
-            <br />
-
-            <div id="projects">
-              <div class="project_card">
-                <img   src="./img/project1.png" alt="one of my projects" >
-                <a href="https://github.com/akomiqaia/Book-review-web-page" target="blank">
-                  <button class="project_button">GitHub Repo</button>
-                </a>
-               
-              </div>
-              <div  class="project_card">
-
-                <img src="./img/project2.png" alt="one of my projects" >
-                <a href="https://github.com/akomiqaia/React-Apps/tree/master/Tricount%20clone" target="blank">
-                  <button class="project_button">GitHub Repo</button>
-                  </a>
-          
-              </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title"><strong>Prepare me - Scrum Master / Full Stack Developer</strong></h3>
+              <p class="card-text">Prepare Me is a platform created for parents with kids with autism. On the platform parents are
+                able to create printable books from templates to tell the social stories to their kids. Prepare me is
+                a part of Tech for Better program at FAC where I took a role of SCRUM Master.</p>
             </div>
-            <p>
-              My mission is to study at FAC and later on establish myself as a web developer in a start-up or small to medium size company. After gaining experience and strengthening connections, I will try to pursue my dream and open my own developer bootcamp in Georgia to help Georgian youngsters to become entrepreneurs and play their role in developing a more sustainable and fair economic and job market.
-            </p>
-            <br />
-            <p>
-              I strongly believe that Founders and Coders training can provide me with the skills to help communities to become harmonious with their surroundings. I believe that studying at FAC will be one of the biggest milestones for my future development and success.
-            </p>
-            <br />
-            <br />
           </div>
+        </div>
+      </div>  
+
+      <div class="card mb-3 descrition-card" >
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="./img/bb.png" class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title"><strong>Bechdel and Beyond - DevOps/Full Stack Developer</strong></h3>
+              <p class="card-text">Bechdel and Beyond is a platform that enables users to search for films and check if the movies
+                pass the Bechdel test and alongside display gender parity for the crew and cast. Users are also
+                able to submit their reviews and vote for the films.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </section>
+
+    <div id="where-footer">
+
       <section id="where">
         <div class="where-wrapper">
           <div class="where-title">
             <h1>You Can Find More On</h1>
           </div>
           <div class="social-media-container-bottom">
-            <div>
-              <a href="https://www.freecodecamp.org/akomiqaia" target="blank">
-                <img src="/img/glyph.png" alt="free Code Camp" />
-                <p>
-                  freeCodeCamp <br />
-                  account
-                </p>
-              </a>
-            </div>
+         
             <div>
               <a href="https://github.com/akomiqaia/akomiqaia.github.io" target="blank">
                 <img
@@ -382,18 +242,7 @@
                 <p>GitHub</p>
               </a>
             </div>
-            <div>
-              <a href="https://www.codewars.com/users/akomiqaia" target="blank">
-                <img
-                  src="/img/open-uri20130901-5708-1gh38y4.png"
-                  alt="code wars portfolio"
-                />
-                <p>
-                  Codewars <br />
-                  Account
-                </p>
-              </a>
-            </div>
+       
             <div>
               <a
                 href="https://www.linkedin.com/in/akaki-mikaia/"
@@ -410,7 +259,10 @@
         </div>
       </section>
     </div>
-  </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="./index.js"></script>
-  </body>
+</body>
 </html>
