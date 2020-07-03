@@ -97,6 +97,7 @@ body {
   background-color: white;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.52);
   z-index: 100000;
+
 }
 
 
@@ -214,7 +215,12 @@ ABOUT ME
 END OF ABOUT ME
 ************************* */
 
-
+.section-title {
+  margin: 0;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  font-size: 32px;
+}
 .descrition-card {
   margin-top: 2rem;
   border: none;
@@ -380,9 +386,6 @@ END OF WHERE
     align-items: center;
     justify-items: center;
   }
-  /* .nav-item .nav-link {
-    color: white;
-  } */
  
   #projects {
     padding-left: 0%;
