@@ -160,6 +160,14 @@ body {
   left: 3%;
   mix-blend-mode: screen;
 }
+.home-title {
+  background-color: hsla(240, 5%, 24%, 0.747);
+  padding: 1.5rem;
+  margin-top: 20vh;
+  color: white;
+  font-weight: 600;
+  line-height: 4rem;
+}
 .social-media-container {
   padding-top: 30px;
 }
@@ -226,7 +234,9 @@ END OF ABOUT ME
   border: none;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25)
 }
-
+.card {
+  border: none;
+}
 #projects {
   padding-left: 15%;
   padding-right: 15%;
@@ -312,7 +322,7 @@ END OF WHERE
 
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 769px) {
   ul li a{
     padding: 6px 8px;
     text-decoration: none;
@@ -325,6 +335,11 @@ END OF WHERE
     background-image: url(/img/stone\ and\ mountains\ -\ small.JPG);
     background-attachment: scroll;
     background-size: cover; 
+  }
+  .home-title {
+    padding: 1rem;
+    line-height: 2rem;
+    margin-top: 3rem;
   }
   .social-media-container-bottom {
     display: grid;
@@ -360,6 +375,7 @@ END OF WHERE
 
 
 @media screen and (max-width: 500px) {
+
   .nav-wrapper {
     position: relative;
     width: 100%;
@@ -387,6 +403,17 @@ END OF WHERE
     justify-items: center;
   }
  
+  #home-text {
+    display: none;
+  }
+  .home-title {
+    padding: 0.5rem;
+    margin-top: 2rem;
+    color: white;
+    font-weight: 500;
+    line-height: 2rem;
+    font-size: 1.5rem;
+  }
   #projects {
     padding-left: 0%;
     padding-right: 0%;
