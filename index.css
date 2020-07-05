@@ -236,6 +236,14 @@ END OF ABOUT ME
 }
 .card {
   border: none;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.card > img {
+  width: 50px;
 }
 #projects {
   padding-left: 15%;
