@@ -250,23 +250,38 @@ END OF ABOUT ME
   margin-bottom: 1.5rem;
   font-weight: 800;
 }
+
 .icon-grids{
   display: flex;
   justify-content: center;
   justify-items: center;
 }
-
-#projects {
-  padding-left: 15%;
-  padding-right: 15%;
+.tech-stack {
+  margin-bottom: 4rem;
 }
-
+#projects {
+  padding: 2rem 15%;
+  background-color: rgba(71, 53, 188, 0.1);
+}
+.project-title {
+  margin-top: 2rem; 
+  margin-bottom: 4rem 
+}
 .card-body {
   min-width: 50%;
   margin: 0 auto;
 }
 
-
+.card-button-link {
+  display: flex;
+  margin-top: 2.5rem;
+  
+}
+.card-button-link > img {
+  width: 30px;
+  height: 30px;
+  margin-right: 1rem;
+}
 /* end of style of carousel and image styling as well */
 
 /* ***********************
@@ -434,8 +449,7 @@ END OF WHERE
     font-size: 1.5rem;
   }
   #projects {
-    padding-left: 0%;
-    padding-right: 0%;
+    padding: 0;
   }
 
 }
