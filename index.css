@@ -239,12 +239,23 @@ END OF ABOUT ME
   display: flex;
   align-items: center;
   justify-items: center;
-  align-content: center;
-  justify-content: center;
+  /* align-content: center;
+  justify-content: center; */
 }
 .card > img {
   width: 50px;
 }
+.col-title {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+}
+.icon-grids{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
 #projects {
   padding-left: 15%;
   padding-right: 15%;
