@@ -261,7 +261,7 @@ END OF ABOUT ME
 }
 #projects {
   padding: 2rem 15%;
-  background-color: rgba(71, 53, 188, 0.1);
+  background-color: rgba(34, 0, 255, 0.04)
 }
 .project-title {
   margin-top: 2rem; 
@@ -300,6 +300,9 @@ WHERE
   padding-top: 5vh;
   padding-bottom: 5vh ;
 }
+#where-footer {
+  display: flex;
+}
  .where-title {
   color: #4835BC;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25),
@@ -309,10 +312,12 @@ WHERE
 .where-wrapper {
   position: relative;
   display: block;
-  width:100%;
   padding-top: 50px;
+  min-height: 50vh;
+  min-width: 50vw;
   background-image: linear-gradient(to top, #8963c8, #7957c7, #674bc6, #503fc5, #3035c5);
 }
+
 .where-title {
   font-size: 24px;
   color: #fff;
@@ -394,14 +399,25 @@ END OF WHERE
   /* what section */
  
 
-  #where {
-    flex-direction: column;
-  }
   #contact-me, .where-wrapper {
     width: 100%;
     min-height: 75vh;
   }
+
+  #where-footer {
+    flex-direction: column;
+  }
+
   
+.where-wrapper {
+  position: relative;
+  display: block;
+  padding-top: 50px;
+  min-height: 20vh;
+  width: 100%;
+  background-image: linear-gradient(to top, #8963c8, #7957c7, #674bc6, #503fc5, #3035c5);
+}
+
 }
 /* end of what section */
 
