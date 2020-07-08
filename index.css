@@ -290,12 +290,43 @@ END OF WHAT
 ************************* */
 
 /* ***********************
+quotes
+************************* */
+
+.blockquote-custom {
+  position: relative;
+  font-size: 1.1rem;
+  height: 100%;
+}
+
+.blockquote-custom-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -25px;
+  left: 50px;
+  background-image: linear-gradient(to top, #8963c8, #7957c7, #674bc6, #503fc5, #3035c5);
+}
+.text-quote {
+  color: #4835BC;
+}
+
+/* ***********************
+END OF quotes
+************************* */
+
+/* ***********************
 WHERE
 ************************* */
 
 #where {
   position: relative;
   display: flex;
+  box-shadow: 0px -4px 10px  rgba(0, 0, 0, 0.25);
 }
 #where-footer .about-me-wrapper {
   padding-top: 5vh;
