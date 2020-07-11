@@ -14,4 +14,3 @@ console.log(comments)
 
 var techIcons = document.querySelectorAll('.card-img-top')
 console.log(techIcons)
-
