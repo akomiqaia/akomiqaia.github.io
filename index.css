@@ -359,10 +359,8 @@ WHERE
 
 
 .social-media-container-bottom {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-flow: dense;
-  padding: 30px 15%;
+  display: flex;
+  justify-content: space-around;
 }
 .social-media-container-bottom a {
   display: inline;
@@ -492,7 +490,9 @@ textarea.input100 {
 
  
 }
-
+.email-icon {
+  width: 30%;
+}
 
 /*------------------------------------------------------------------
 
@@ -531,9 +531,8 @@ END OF WHERE
     margin-top: 3rem;
   }
   .social-media-container-bottom {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-flow: dense;
+    display: flex;
+  
     padding: 30px 15%;
   }
   
@@ -548,10 +547,12 @@ END OF WHERE
   }
   /* what section */
  
-
+  #where {
+    flex-direction: column;
+  }
   #contact-me, .where-wrapper {
     width: 100%;
-    min-height: 75vh;
+    /* min-height: 75vh; */
   }
 
   #where-footer {
@@ -617,5 +618,6 @@ END OF WHERE
   #projects {
     padding: 0;
   }
+ 
 
 }
