@@ -232,7 +232,7 @@ END OF ABOUT ME
 .descrition-card {
   margin-top: 2rem;
   border: none;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25)
+  box-shadow: 0px 5px 5px rgb(255, 255, 255)
 }
 .card {
   border: none;
@@ -262,9 +262,13 @@ END OF ABOUT ME
 }
 #projects {
   padding: 2rem 15%;
-  background-color: rgba(34, 0, 255, 0.04)
+  background-image: linear-gradient(to bottom, #a98adbfb, #7957c7, #674bc6, #503fc5, #3035c5);
+  /* background-color: #4835BC; */
+  
 }
-
+.projects-title{
+  color: white;
+}
 
 .project-title {
   margin-top: 2rem; 
