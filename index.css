@@ -262,13 +262,13 @@ END OF ABOUT ME
 }
 #projects {
   padding: 2rem 15%;
-  background-image: linear-gradient(to bottom, #a98adbfb, #7957c7, #674bc6, #503fc5, #3035c5);
-  /* background-color: #4835BC; */
+  /* background-image: linear-gradient(to bottom, #a98adbfb, #7957c7, #674bc6, #503fc5, #3035c5); */
+  background-color: rgba(71, 53, 188, 0.068);
   
 }
-.projects-title{
+/* .projects-title{
   color: white;
-}
+} */
 
 .project-title {
   margin-top: 2rem; 
